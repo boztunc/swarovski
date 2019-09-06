@@ -1,0 +1,196 @@
+@font-face {
+    font-family: swarovski-demi;
+    src: url(../assets/fonts/SwarovskiFutura-Demi.woff);
+}
+@font-face {
+    font-family: futura-boo;
+    src: url(../assets/fonts/Futura-Boo.woff);
+}
+
+body, html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    position: fixed;
+}
+.container {
+    position: relative;
+}
+.logo {
+    width: fit-content;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 5px auto;
+    text-align: center;
+}
+.logo img{
+    width: 30%;
+}
+
+.header-text p{
+    font-family: swarovski-demi;
+    text-align: center;
+    font-size: large;
+    margin: 10px;
+}
+.input{
+    text-align: center;
+    font-size: x-large;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 2px solid #666666;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 255px;
+    height: 255px;
+    background-color: #f6f6f6;
+}
+.upload-icon{
+    background: url(../assets/img/upload-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+
+}
+
+.container-upload{
+    font-family: futura-boo;
+    align-items: center;
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.user-container{
+    text-align: center;
+}
+.user-container input[type="text"] {
+    font-family: futura-boo;
+    width: 75%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+}
+
+input[name="send"] {
+    font-family: futura-boo;
+    width: 50%;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+    padding: 10px 12px;
+    margin: 8px 0;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.div-output{
+    display: none;
+    text-align: center;
+}
+#output{
+    border: 2px solid #666666;
+    display: inline-block;
+    width: 300px;
+    height: auto;
+}
+
+.materials-container{
+    display: none;
+}
+.materials-container img{
+    width: 100%;
+    z-index: 0;
+}
+.material{
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+.tooltiptext {
+    display: none;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    font-family: futura-boo;
+    width: 142px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: relative;
+    z-index: 1;
+  }
+
+.left-icons{
+    display: none;
+    float: right;
+    position: absolute;
+    top: 60%;
+    width: -webkit-fill-available;
+    text-align: -webkit-right;
+    right: 5px;
+}
+
+.left-icons img{
+    width: 25px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.loader-bg{
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    top: 0;
+    height: 100%;
+    opacity: 0.30;
+}
+.loader{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+.loader img{
+    width: 100px;
+}
+#loader-container{
+    display: none;
+}
+
+.condition-container{
+    font-family: swarovski-demi;
+    text-align: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 10px;
+    font-size: 18px;
+    text-decoration: underline;
+    text-underline-position: under;
+}
